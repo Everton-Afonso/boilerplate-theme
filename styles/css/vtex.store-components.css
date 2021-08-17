@@ -1,0 +1,19 @@
+.searchBarContainer {
+  width: 500px;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #f6f5f4;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) :hover{
+    border-bottom: 3px solid #f6f5f4;
+}
+.searchBarContainer :global(.vtex-input__suffix) {
+  display: none;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+  color: #59ff00;
+  font-weight: 600;
+}
