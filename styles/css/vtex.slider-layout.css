@@ -4,11 +4,21 @@
     max-width: 960px;
     margin-top: 16px;
 }
-.caretIcon--promotion {
+.sliderArrows--promotion {
     margin-top: 27rem;
     width: 22rem;
-    color: white;
+    color: #fff;
 }
 .paginationDotsContainer--promotion {
     margin-bottom: -2.78rem;
+}
+.slideChildrenContainer--menu-layout {
+    background: #212121;
+}
+.paginationDotsContainer--menu-layout{
+    display: none;
+}
+.caretIcon--menu-layout {
+    color: #fff;
+    width: 16px;
 }
