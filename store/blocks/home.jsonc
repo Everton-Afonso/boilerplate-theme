@@ -181,8 +181,8 @@
   },
   "product-summary.shelf#products": {
     "children": [
-      "modal-trigger#quickview",
       "product-summary-name",
+      "modal-trigger#quickview",
       "product-rating-inline",
       "product-summary-space",
       "product-summary-price",

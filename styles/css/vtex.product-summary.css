@@ -1,9 +1,30 @@
 .element {
     padding: 10px;
+    background: #424242;
+
+}
+.buyButton :global(.vtex-button){
+    background: #58FF06;
+    border: none;
+    transition: filter 0.2s;
+}
+.buyButton :global(.vtex-button):hover{
+    filter: brightness(0.6);
+}
+.buyButtonText{
+    color: #3C453C;
+    font-weight: 600;
+}
+.brandName {
+    font-size: 20px;
 }
 .brandName,
 .listPriceContainer,
 .sellingPriceContainer,
 .price_installmentContainer {
     color: #fff;
+}
+.sellingPrice {
+    font-weight: 600;
+    color: #58FF06;
 }
