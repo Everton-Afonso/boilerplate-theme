@@ -1,7 +1,5 @@
 .element {
-    padding: 10px;
     background: #424242;
-
 }
 .buyButton :global(.vtex-button){
     background: #58FF06;

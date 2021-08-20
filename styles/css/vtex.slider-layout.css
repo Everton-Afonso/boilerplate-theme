@@ -25,3 +25,6 @@
 .sliderLayoutContainer--products-layout {
     margin-top: 80px;
 }
+.slideChildrenContainer--products-layout {
+    padding: 5px;
+}

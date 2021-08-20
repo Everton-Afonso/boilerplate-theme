@@ -168,7 +168,7 @@
     "blocks": ["product-summary.shelf#products"],
     "children": ["slider-layout"],
     "props": {
-      "maxItems": 4,
+      "maxItems": 8,
       "category": "20",
       "hideUnavailableItems": true,
       "blockClass": "products"
