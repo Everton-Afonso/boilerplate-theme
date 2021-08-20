@@ -1,0 +1,9 @@
+.productBrandName,
+.productName,
+.unitPriceContainer,
+.price {
+    color: #fff;
+}
+.deleteIcon {
+    color: red;
+}
