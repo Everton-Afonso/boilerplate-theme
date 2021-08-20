@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": ["tab-layout#home"]
+    "blocks": ["tab-layout#home", "list-context.product-list"]
   },
   "tab-layout#home": {
     "children": [
@@ -113,11 +113,11 @@
       "height": 650,
       "images": [
         {
-          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T122642Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e2ee802dee2c13a0e921e308f0de57ebf21adf9e313b8bc1d5e464c2116d8ce9",
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T183146Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f263d818e062e81a750b250c4e058a4a6ae3279c59bd8cff21372e5a014d6901",
           "description": "something something"
         },
         {
-          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T122747Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4c196db0595573ed3830394ed0c829610f68cd78fa406bddb98dd9f0d9c7802b",
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T183306Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fa2d84365b01d474e29cd10e682d81f0942a5c85433e80b79714a599c1425e70",
           "description": "something something"
         }
       ]
@@ -163,5 +163,42 @@
       "textPosition": "CENTER",
       "font": "t-heading-3"
     }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf#products"],
+    "children": ["slider-layout"],
+    "props": {
+      "maxItems": 4,
+      "category": "20",
+      "hideUnavailableItems": true,
+      "blockClass": "products"
+    }
+  },
+  "slider-layout": {
+    "props": {
+      "blockClass": "products-layout"
+    }
+  },
+  "product-summary.shelf#products": {
+    "children": [
+      "modal-trigger#quickview",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ]
   }
 }

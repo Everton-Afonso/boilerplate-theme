@@ -1,0 +1,9 @@
+.element {
+    padding: 10px;
+}
+.brandName,
+.listPriceContainer,
+.sellingPriceContainer,
+.price_installmentContainer {
+    color: #fff;
+}

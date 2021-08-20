@@ -1,12 +1,11 @@
-
 .listItem :global(.vtex-button) {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 .listItem :global(.vtex-button) :hover {
-    color: #59ff00;
-    border-bottom: 3px solid #59ff00;
+  color: #59ff00;
+  border-bottom: 3px solid #59ff00;
 }
-.listItem :global(.vtex-button__label){
-    font-size: 14px;
+.listItem :global(.vtex-button__label) {
+  font-size: 14px;
 }
